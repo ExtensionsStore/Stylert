@@ -10,6 +10,10 @@
 
 class Aydus_Stylert_Block_Stylert extends Mage_Core_Block_Template
 {
+    public function getEnabled()
+    {
+        return (Mage::getStoreConfig('design/stylert/enabled')) ? 'true' : 'false';        
+    }
 	
     public function getHeaderText() 
     {

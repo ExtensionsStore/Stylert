@@ -11,33 +11,38 @@ function Stylert($)
     var stylert = function(message)
     {
         $('.stylert-message','#stylert').html(message);
-        $('#stylert').show();            
+        $('#stylert').show();  
+        
+        return true;
+    };
+    
+    var close = function(e)
+    {
+        e.preventDefault();
+        $('#stylert').hide();        
     };
     
     return {
         init : function()
         {
-            //var proxy = window.alert;
+            if (typeof stylertEnabled != 'undefined' && stylertEnabled === true){
+                window.alert = function() {
 
-            window.alert = function() {
+                    var message = arguments[0];
+                    return stylert(message);
+                };       
 
-                //return proxy.apply(this, arguments);
-                var message = arguments[0];
-                return stylert(message);
-            };            
-            $('.stylert-close, .stylert-ok','#stylert').click(this.close);
+                $('.stylert-close, .stylert-ok','#stylert').click(this.close);                
+            }
             
         },
         close : function(e)
         {
-            e.preventDefault();
-            $('#stylert').hide();
+            close(e);
         },        
-        alert : function(message)
+        stylert : function(message)
         {
-            stylert(message);
-            
-            return true;
+            return stylert(message);
         }
     };
 }
