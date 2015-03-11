@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * Stylert block template
+ *
+ * @category   Aydus
+ * @package    Aydus_Stylert
+ * @author     Aydus Consulting <davidt@aydus.com>
+ */
+?>
+<div id="stylert">
+
+    <div class="stylert-bg"></div>
+    
+    <div class="stylert-container">
+        <div class="stylert-header">
+        <h4><?php echo $this->getHeaderText() ?></h4>
+        <a href="#" class="stylert-close" title="Close"></a>
+        </div>
+        
+        <div>
+            <span class="stylert-message">
+            </span>
+            <span><?php echo $this->getMessageTextAfter(); ?></span>
+        </div>
+        
+        <div class="buttons-set">
+            <button class="button stylert-ok">OK</button>
+        </div>
+                
+    </div>
+</div>
+

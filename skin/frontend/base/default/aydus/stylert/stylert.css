@@ -1,0 +1,68 @@
+/**
+ * Stylert css
+ *
+ * @category   Aydus
+ * @package    Aydus_Stylert
+ * @author     Aydus Consulting <davidt@aydus.com>
+ */
+
+#stylert {
+    display: none;
+    position: relative;
+}
+
+.stylert-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #efefef;
+    opacity: .50;
+    -webkit-opacity: .5;
+    -moz-opacity: .5;
+    filter: alpha(opacity=50);
+    z-index: 1000;
+}
+
+.stylert-container {
+    background-color: white;
+    height: auto;
+    left: 50%;
+    margin: -120px 0 0 -160px;
+    padding: 10px;
+    position: fixed;
+    top: 40%;
+    width: 320px;
+    z-index: 1000;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0 0 20px 0 #222;
+    -webkit-box-shadow: 0 0 20px 0 #222;
+    -moz-box-shadow: 0 0 20px 0 #222;
+}
+
+.stylert-header {
+    overflow: hidden;
+}
+
+.stylert-header h4 {
+    float: left;
+    font-size: 14px;
+}
+
+.stylert-close {
+    display: block;
+    color: #636363;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    float: right;
+    position: relative;
+    top: -3px;
+}
+
+.stylert-close:before {
+    content: "×";
+}

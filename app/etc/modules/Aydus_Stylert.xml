@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * Stylert module
+ *
+ * @category   Aydus
+ * @package    Aydus_Stylert
+ * @author     Aydus Consulting <davidt@aydus.com>
+ */
+-->
+<config>
+    <modules>
+        <Aydus_Stylert>
+             <active>true</active>
+             <codePool>community</codePool>
+        </Aydus_Stylert>
+    </modules>
+</config>

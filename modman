@@ -1,0 +1,5 @@
+app/code/community/Aydus/Stylert/                           app/code/community/Aydus/Stylert/
+app/design/frontend/base/default/layout/aydus/stylert.xml   app/design/frontend/base/default/layout/aydus/stylert.xml
+app/design/frontend/base/default/template/aydus/stylert/    app/design/frontend/base/default/template/aydus/stylert/
+app/etc/modules/Aydus_Stylert.xml                           app/etc/modules/Aydus_Stylert.xml
+skin/frontend/base/default/aydus/stylert/                   skin/frontend/base/default/aydus/stylert/

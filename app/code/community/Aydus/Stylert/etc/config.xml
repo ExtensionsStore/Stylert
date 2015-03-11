@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Stylert config
+ *
+ * @category   Aydus
+ * @package    Aydus_Stylert
+ * @author     Aydus Consulting <davidt@aydus.com>
+ */
+-->
+<config>
+    <modules>
+        <Aydus_Stylert>
+            <version>0.1.0</version>
+        </Aydus_Stylert>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <aydus_stylert module="Aydus_Stylert">
+                    <file>aydus/stylert.xml</file>
+                </aydus_stylert>
+            </updates>
+        </layout>     
+    </frontend>
+    <global>    
+        <blocks>
+            <aydus_stylert>
+                <class>Aydus_Stylert_Block</class>
+            </aydus_stylert>
+        </blocks>          
+        <helpers>
+            <aydus_stylert>
+                <class>Aydus_Stylert_Helper</class>
+            </aydus_stylert>
+        </helpers>                 
+    </global>  
+    <default>
+        <design>
+            <stylert>
+                <enabled>1</enabled>
+                <header_text>Alert</header_text>
+            </stylert>
+        </design>        
+    </default>       
+</config>
